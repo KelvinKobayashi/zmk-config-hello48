@@ -1,6 +1,6 @@
 if SHIELD_HELLO48
 
-config ZMK_HELLO48
+config ZMK_KEYBOARD_NAME
     default "Hello48"
 
 endif

@@ -13,6 +13,10 @@
 #define GAMEFN 7
 #define NUMPAD 8
 
+&sl {
+    release-after-ms = <3000>;
+  };
+
 / {
   combos {
     compatible = "zmk,combos";
@@ -37,10 +41,6 @@
     };
   };
   
-  sl {
-    release-after-ms = <3000>;
-  };
-
   keymap {
     compatible = "zmk,keymap";
 

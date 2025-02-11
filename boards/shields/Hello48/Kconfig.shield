@@ -1,6 +1,6 @@
 # No whitespace after the comma or in the keyboard name!
 config SHIELD_HELLO48
-    def_bool $(shields_list_contains,Hello48)
+    def_bool $(shields_list_contains,hello48)
 
 #config SHIELD_HELLO48_DONGLE
-#    def_bool $(shields_list_contains,Hello48_dongle)
+#    def_bool $(shields_list_contains,hello48_dongle)

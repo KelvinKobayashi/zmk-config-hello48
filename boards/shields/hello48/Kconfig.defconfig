@@ -3,15 +3,15 @@ if SHIELD_HELLO48 || SHIELD_HELLO48_DONGLE
 config ZMK_SPLIT
     default y
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
 config ZMK_KEYBOARD_NAME
     default "Hello48"
 
 endif # SHIELD_HELLO48 || SHIELD_HELLO48_DONGLE
 
 if SHIELD_HELLO48_DONGLE
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
 
 # Set this to the number of peripherals your dongle will have.
 # For a unibody, this would be 1. If you have left and right halves, set it to 2, etc.

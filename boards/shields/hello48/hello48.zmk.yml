@@ -1,0 +1,12 @@
+file_format: "1"
+id: hello48
+name: hello48
+type: shield
+url: NA
+requires: [nice_nano_v2]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - hello48
+  - hello48_dongle

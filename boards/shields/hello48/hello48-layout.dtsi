@@ -2,9 +2,9 @@
 #include <physical_layouts.dtsi>
 
 / {
-    layout_ortho_4x12_all1u: layout_ortho_4x12_all1u {
+    hello48_layout: hello48_layout {
         compatible = "zmk,physical-layout";
-        display-name = "40% All 1U/Grid";
+        display-name = "Default";
         transform = <&default_transform>;
         kscan = <&kscan0>;
 

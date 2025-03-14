@@ -5,6 +5,8 @@
     layout_ortho_4x12_all1u: layout_ortho_4x12_all1u {
         compatible = "zmk,physical-layout";
         display-name = "40% All 1U/Grid";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>

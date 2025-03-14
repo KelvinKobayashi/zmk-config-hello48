@@ -35,8 +35,6 @@ config BT_MAX_CONN
 config BT_MAX_PAIRED
     default 6
 
-endif
-
 if ZMK_DISPLAY
 
 config I2C
@@ -45,8 +43,6 @@ config I2C
 choice ZMK_DISPLAY_WORK_QUEUE
     default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
 endchoice
-
-endif
 
 if LVGL
 
@@ -63,5 +59,8 @@ choice LV_COLOR_DEPTH
     default LV_COLOR_DEPTH_1
 endchoice
 
-endif
+endif # LVGL
 
+endif # ZMK_DISPLAY
+
+endif # SHIELD_HELLO48_DONGLE

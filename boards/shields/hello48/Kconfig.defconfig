@@ -1,21 +1,17 @@
-if SHIELD_HELLO48
+if SHIELD_HELLO48 || SHIELD_HELLO48_DONGLE
 
-config ZMK_KEYBOARD_NAME
-    default "Hello48"
-
-endif
-
-if SHIELD_HELLO48_DONGLE
-
-# Max 16 characters in keyboard name
-config ZMK_KEYBOARD_NAME
-    default "Hello48"
+config ZMK_SPLIT
+    default y
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-config ZMK_SPLIT
-    default y
+config ZMK_KEYBOARD_NAME
+    default "Hello48"
+
+endif # SHIELD_HELLO48 || SHIELD_HELLO48_DONGLE
+
+if SHIELD_HELLO48_DONGLE
 
 # Set this to the number of peripherals your dongle will have.
 # For a unibody, this would be 1. If you have left and right halves, set it to 2, etc.
@@ -30,4 +26,31 @@ config BT_MAX_CONN
 config BT_MAX_PAIRED
     default 6
 
-endif
+if ZMK_DISPLAY
+
+config I2C
+    default y
+
+config SSD1306
+    default y
+
+if LVGL
+
+config LV_Z_VDB_SIZE
+    default 64
+
+config LV_DPI_DEF
+    default 148
+
+config LV_Z_BITS_PER_PIXEL
+    default 1
+
+choice LV_COLOR_DEPTH
+    default LV_COLOR_DEPTH_1
+endchoice
+
+endif # LVGL
+
+endif # ZMK_DISPLAY
+
+endif # SHIELD_HELLO48_DONGLE

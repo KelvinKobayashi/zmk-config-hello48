@@ -64,7 +64,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
    &kp LEFT_SHIFT     &kp Z        &kp X          &kp C         &kp V         &kp B         &kp N         &kp M       &kp COMMA      &kp DOT      &kp SLASH  &kp RIGHT_SHIFT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-  &kp LEFT_CONTROL &kp LEFT_GUI &kp LEFT_ALT &mo BASENUMSHFT &mo BASENUM    &kp SPACE     &kp SPACE  &mo BASENUMSHFT &mo BASENUM  &kp RIGHT_ALT   &sl BASEFN &kp RIGHT_CONTROL
+  &kp LEFT_CONTROL &kp LEFT_GUI &kp LEFT_ALT &mo DEFNUMSHFT &mo DEFNUM    &kp SPACE     &kp SPACE  &mo DEFNUMSHFT &mo DEFNUM  &kp RIGHT_ALT   &sl BASEFN &kp RIGHT_CONTROL
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
       >;
     };

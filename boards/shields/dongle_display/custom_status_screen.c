@@ -27,8 +27,6 @@ static struct zmk_widget_hid_indicators hid_indicators_widget;
 
 lv_style_t global_style;
 
-LV_FONT_DECLARE(LV_FONT_UNSCII_16);
-
 lv_obj_t *zmk_display_status_screen() {
     lv_obj_t *screen;
 

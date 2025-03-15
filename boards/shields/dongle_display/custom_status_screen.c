@@ -33,7 +33,7 @@ lv_obj_t *zmk_display_status_screen() {
     screen = lv_obj_create(NULL);
 
     lv_style_init(&global_style);
-    lv_style_set_text_font(&global_style, &lv_font_unscii_8);
+    lv_style_set_text_font(&global_style, &lv_font_unscii_16);
     lv_style_set_text_letter_space(&global_style, 1);
     lv_style_set_text_line_space(&global_style, 1);
     lv_obj_add_style(screen, &global_style, LV_PART_MAIN);
@@ -45,7 +45,7 @@ lv_obj_t *zmk_display_status_screen() {
     // lv_obj_align(zmk_widget_bongo_cat_obj(&bongo_cat_widget), LV_ALIGN_BOTTOM_RIGHT, 0, -7);
 
     zmk_widget_modifiers_init(&modifiers_widget, screen);
-    lv_obj_align(zmk_widget_modifiers_obj(&modifiers_widget), LV_ALIGN_BOTTOM_LEFT, 0, 12);
+    lv_obj_align(zmk_widget_modifiers_obj(&modifiers_widget), LV_ALIGN_BOTTOM_LEFT, 0, 16);
 
 #if IS_ENABLED(CONFIG_ZMK_HID_INDICATORS)
     zmk_widget_hid_indicators_init(&hid_indicators_widget, screen);

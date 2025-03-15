@@ -31,15 +31,15 @@ static void set_hid_indicators(lv_obj_t *label, struct hid_indicators_state stat
     bool lock = false;
 
     if (state.hid_indicators & LED_CLCK) {
-        strncat(text, "Caps", 4);
+       strncat(text, "C", 1);
         lock = true;
     }
     if (state.hid_indicators & LED_NLCK) {
-        strncat(text, "Num", 3);
+        strncat(text, "N", 1);
         lock = true;
     }
     if (state.hid_indicators & LED_SLCK) {
-        strncat(text, "Scr", 3);
+        strncat(text, "S", 1);
         lock = true;
     }
     if (lock) {

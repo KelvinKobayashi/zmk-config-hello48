@@ -28,20 +28,26 @@
     combo_GameToggle {
       timeout-ms = <50>;
       key-positions = <0 11 36 47>;
-      layers = <BASE GAME>;
+      layers = <DEF GAME>;
       bindings = <&tog GAME>; 
     };
 	combo_NumPad {
       timeout-ms = <50>;
       key-positions = <19 20 33>;
-      layers = <BASE NUMPAD>;
+      layers = <DEF NUMPAD>;
       bindings = <&tog NUMPAD>; 
     };
 	combo_CapsLock {
       timeout-ms = <50>;
       key-positions = <24 35>;
-      layers = <BASE GAME>;
+      layers = <DEF GAME>;
       bindings = <&kp CAPS>; 
+    };
+    combo_StudioUnlock {
+      timeout-ms = <50>;
+      key-positions = <1 10 25 34>;
+      layers = <DEF GAME>;
+      bindings = <&studio_unlock>; 
     };
   };
   

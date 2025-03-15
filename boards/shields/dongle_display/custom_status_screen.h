@@ -9,4 +9,6 @@
 
 #include <lvgl.h>
 
+#define LV_FONT_UNSCII_16 1
+
 lv_obj_t *zmk_display_status_screen();

@@ -7,10 +7,10 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 #include <dt-bindings/zmk/pointing.h>
 
-#define BASE 0
-#define BASENUM 1
-#define BASENUMSHFT 2
-#define BASEFN 3
+#define DEF 0 
+#define DEFNUM 1
+#define DEFNUMSHFT 2
+#define DEFFN 3
 #define GAME 4
 #define GAMENUM 5
 #define GAMENUMSHFT 6
@@ -48,8 +48,8 @@
   keymap {
     compatible = "zmk,keymap";
 
-    Base_layer {
-      display-name = "BASE";
+    Def_layer {
+      display-name = "Default";
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
       &kp TAB         &kp Q        &kp W          &kp E         &kp R         &kp T         &kp Y         &kp U         &kp I        &kp O         &kp P      &kp BACKSPACE
@@ -63,7 +63,8 @@
       >;
     };
 
-    BaseNum_layer {
+    DefNum_layer {
+      display-name = "Default";
       bindings = <
         &kp GRAVE &kp N1       &kp N2         &kp N3         &kp N4          &kp N5      &kp N6      &kp N7           &kp N8            &kp N9            &kp N0        &kp BACKSPACE
 		&trans    &kp ESCAPE   &none          &mmv MOVE_UP   &mkp LCLK       &mkp RCLK   &kp HOME    &kp PG_DN        &kp PG_UP         &kp END           &kp MINUS     &kp SINGLE_QUOTE
@@ -72,7 +73,8 @@
       >;
     };
 
-    BaseNumShft_layer {
+    DefNumShft_layer {
+      display-name = "Default";
       bindings = <
         &kp TILDE &kp EXCLAMATION &kp AT_SIGN    &kp HASH       &kp DOLLAR      &kp PERCENT &kp CARET &kp AMPERSAND &kp ASTERISK   &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp DEL
 		&trans    &none           &none          &msc SCRL_UP   &none           &none       &kp LEFT  &kp DOWN      &kp UP         &kp RIGHT            &kp UNDERSCORE        &kp DOUBLE_QUOTES
@@ -81,7 +83,8 @@
       >;
     };
 
-    BaseFn_layer {
+    DefFn_layer {
+      display-name = "Function";
       bindings = <
         &kp F1      &kp F2       &kp F3       &kp F4       &kp F5       &kp F6        &kp F7 &kp F8     &kp F9            &kp F10         &kp F11 &kp F12
 		&bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none  &none      &none             &none           &none   &none
@@ -91,7 +94,7 @@
     };
 
     Game_layer {
-      display-name = "GAME";
+      display-name = "Game";
       bindings = <
         &kp ESCAPE       &kp Q        &kp W        &kp E              &kp R            &kp T     &kp Y     &kp U              &kp I              &kp O         &kp P         &kp BACKSPACE
 		&kp TAB          &kp A        &kp S        &kp D              &kp F            &kp G     &kp H     &kp J              &kp K              &kp L         &kp SEMICOLON &kp RETURN
@@ -101,6 +104,7 @@
     };
 
     GameNum_layer {
+      display-name = "Game";
       bindings = <
         &kp GRAVE &kp N1       &kp N2         &kp N3         &kp N4          &kp N5      &kp N6      &kp N7           &kp N8            &kp N9            &kp N0        &kp BACKSPACE
 		&trans    &kp ESCAPE   &none          &mmv MOVE_UP   &mkp LCLK       &mkp RCLK   &kp HOME    &kp PG_DN        &kp PG_UP         &kp END           &kp MINUS     &kp SINGLE_QUOTE
@@ -110,6 +114,7 @@
     };
 
     GameNumShft_layer {
+      display-name = "Game";
       bindings = <
         &kp TILDE &kp EXCLAMATION &kp AT_SIGN    &kp HASH       &kp DOLLAR      &kp PERCENT &kp CARET &kp AMPERSAND &kp ASTERISK   &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp DEL
 		&trans    &none           &none          &msc SCRL_UP   &none           &none       &kp LEFT  &kp DOWN      &kp UP         &kp RIGHT            &kp UNDERSCORE        &kp DOUBLE_QUOTES
@@ -119,6 +124,7 @@
     };
 
     GameFn_layer {
+      display-name = "Game";
       bindings = <
         &kp F1 &kp F2       &kp F3       &kp F4       &kp F5       &kp F6 &kp F7 &kp F8     &kp F9            &kp F10         &kp F11 &kp F12
 		&none  &none        &none        &none        &none        &none  &none  &none      &none             &none           &none   &none
@@ -128,7 +134,7 @@
     };
 
     NumPad_layer {
-      display-name = "NUMPAD";
+      display-name = "NumPad";
       bindings = <
         &kp TAB          &none         &none        &none &none &none     &none     &kp N7 &kp N8    &kp N9  &kp MINUS &kp BACKSPACE
 		&kp LEFT_CONTROL &tog NUMPAD   &none        &none &none &none     &none     &kp N4 &kp N5    &kp N6  &kp PLUS  &kp RETURN

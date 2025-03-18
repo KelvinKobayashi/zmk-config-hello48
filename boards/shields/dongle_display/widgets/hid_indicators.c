@@ -31,7 +31,7 @@ static void set_hid_indicators(lv_obj_t *label, struct hid_indicators_state stat
     bool lock = false;
 
     if (state.hid_indicators & LED_CLCK) {
-        strncat(text, "C", 1);
+       strncat(text, "C", 1);
         lock = true;
     }
     if (state.hid_indicators & LED_NLCK) {
@@ -43,7 +43,7 @@ static void set_hid_indicators(lv_obj_t *label, struct hid_indicators_state stat
         lock = true;
     }
     if (lock) {
-        strncat(text, "LCK", 3);
+        strncat(text, "Lck", 3);
     }
 
     lv_label_set_text(label, text);

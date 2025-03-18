@@ -1,5 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "hello48-layout.dtsi"
+#include "layouts/common/ortho_4x12/all1u.dtsi"
+
+&layout_ortho_4x12_all1u {
+    transform = <&default_transform>;
+};
 
 / {
     chosen {

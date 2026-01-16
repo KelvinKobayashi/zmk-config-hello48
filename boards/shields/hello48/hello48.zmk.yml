@@ -3,10 +3,11 @@ id: hello48
 name: hello48
 type: shield
 url: NA
-requires: [nice_nano_v2]
-exposes: [i2c_oled]
+requires: 
+  - nice_nano@2
 features:
   - keys
+  - studio
 siblings:
   - hello48
   - hello48_dongle
